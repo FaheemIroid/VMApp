@@ -13,8 +13,8 @@
 		A6E9DD9F2893E942006E3F16 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9DD9E2893E942006E3F16 /* RoomViewController.swift */; };
 		A6E9DDA22893EFF1006E3F16 /* TblRoomsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9DDA02893EFF1006E3F16 /* TblRoomsCell.swift */; };
 		A6E9DDA32893EFF1006E3F16 /* TblRoomsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E9DDA12893EFF1006E3F16 /* TblRoomsCell.xib */; };
+		A6E9DDA528940EBA006E3F16 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9DDA428940EBA006E3F16 /* PeopleViewController.swift */; };
 		A6FEE4BA2892496E00AC8783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FEE4B92892496E00AC8783 /* AppDelegate.swift */; };
-		A6FEE4BE2892496E00AC8783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FEE4BD2892496E00AC8783 /* ViewController.swift */; };
 		A6FEE4C12892496E00AC8783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FEE4BF2892496E00AC8783 /* Main.storyboard */; };
 		A6FEE4C32892497000AC8783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FEE4C22892497000AC8783 /* Assets.xcassets */; };
 		A6FEE4C62892497000AC8783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FEE4C42892497000AC8783 /* LaunchScreen.storyboard */; };
@@ -36,9 +36,9 @@
 		A6E9DD9E2893E942006E3F16 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		A6E9DDA02893EFF1006E3F16 /* TblRoomsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TblRoomsCell.swift; sourceTree = "<group>"; };
 		A6E9DDA12893EFF1006E3F16 /* TblRoomsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TblRoomsCell.xib; sourceTree = "<group>"; };
+		A6E9DDA428940EBA006E3F16 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		A6FEE4B62892496E00AC8783 /* VMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FEE4B92892496E00AC8783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6FEE4BD2892496E00AC8783 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6FEE4C02892496E00AC8783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6FEE4C22892497000AC8783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6FEE4C52892497000AC8783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,8 +101,8 @@
 				A6E9DD952893A703006E3F16 /* Cell */,
 				A6FEE4B92892496E00AC8783 /* AppDelegate.swift */,
 				A6E9DD9C2893C044006E3F16 /* SceneDelegate.swift */,
+				A6E9DDA428940EBA006E3F16 /* PeopleViewController.swift */,
 				A6E9DD9E2893E942006E3F16 /* RoomViewController.swift */,
-				A6FEE4BD2892496E00AC8783 /* ViewController.swift */,
 				A6FEE4BF2892496E00AC8783 /* Main.storyboard */,
 				A6FEE4C22892497000AC8783 /* Assets.xcassets */,
 				A6FEE4C42892497000AC8783 /* LaunchScreen.storyboard */,
@@ -228,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6FEE4BE2892496E00AC8783 /* ViewController.swift in Sources */,
+				A6E9DDA528940EBA006E3F16 /* PeopleViewController.swift in Sources */,
 				A6FEE4E32892A4E300AC8783 /* JTMaterialSpinner.swift in Sources */,
 				A6FEE4DE28928F4500AC8783 /* Helper.swift in Sources */,
 				A6E9DD9F2893E942006E3F16 /* RoomViewController.swift in Sources */,

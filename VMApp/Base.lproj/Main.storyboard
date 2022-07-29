@@ -21,8 +21,8 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="NLa-ad-odK" id="UKt-wn-MxA"/>
-                                    <outlet property="delegate" destination="NLa-ad-odK" id="czl-tj-Xsp"/>
+                                    <outlet property="dataSource" destination="eZX-e2-ssd" id="Rzd-pS-ktG"/>
+                                    <outlet property="delegate" destination="eZX-e2-ssd" id="FJc-Yp-uzE"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -37,7 +37,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Rooms" id="G18-0E-gCT"/>
                     <connections>
-                        <outlet property="tvList" destination="MQR-sX-dvx" id="Htx-0y-ahv"/>
+                        <outlet property="tvList" destination="MQR-sX-dvx" id="Lac-F7-0NW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9r-QG-VRn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -47,7 +47,7 @@
         <!--People-->
         <scene sceneID="4yq-q7-AKZ">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="NLa-ad-odK" customClass="ViewController" customModule="VMApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PeopleViewController" id="NLa-ad-odK" customClass="PeopleViewController" customModule="VMApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uer-q9-fks">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,8 +56,8 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="NLa-ad-odK" id="BuY-9v-JTN"/>
-                                    <outlet property="delegate" destination="NLa-ad-odK" id="QLw-K6-PAG"/>
+                                    <outlet property="dataSource" destination="NLa-ad-odK" id="EBM-Y8-zzb"/>
+                                    <outlet property="delegate" destination="NLa-ad-odK" id="U8b-8i-biR"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -74,7 +74,7 @@
                         <color key="badgeColor" red="0.76862745099999996" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="tvList" destination="WCX-DT-dhX" id="2Ew-SM-Xa3"/>
+                        <outlet property="tvList" destination="WCX-DT-dhX" id="qIn-0B-U2u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oy-1V-z1Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

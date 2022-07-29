@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  PeopleViewController.swift
 //  VMApp
 //
-//  Created by Faheem Hussain on 28/07/22.
+//  Created by Faheem Hussain on 29/07/22.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class PeopleViewController: UIViewController {
+
     @IBOutlet weak var tvList: UITableView!
     
     var viewModel = VCViewModel()
@@ -21,13 +21,16 @@ class ViewController: UIViewController {
     }
     func initialSetup(){
         Helper.StatusBarColor(view: self.view)
+
         self.tvList.register(UINib(nibName: "TblListCell", bundle: nil), forCellReuseIdentifier: "TblListCell")
         self.modelDataChangeSetup()
         self.peopleAPI()
        
     }
+    
+
 }
-extension ViewController{
+extension PeopleViewController{
     //MARK: - People  API Calls
     func peopleAPI() {
         if Helper.checkConnectivity() {
@@ -47,7 +50,7 @@ extension ViewController{
     }
 }
 //MARK: - Table DataSource
-extension ViewController: UITableViewDataSource {
+extension PeopleViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.peopleData?.count ?? 0
     }
@@ -64,7 +67,8 @@ extension ViewController: UITableViewDataSource {
     }
 }
 //MARK: - Table Delegate
-extension ViewController: UITableViewDelegate {
+extension PeopleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
 }
+

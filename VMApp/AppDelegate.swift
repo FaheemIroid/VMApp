@@ -33,18 +33,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-extension UIWindowScene {
-    static var focused: UIWindowScene? {
-        return UIApplication.shared.connectedScenes
-            .first { $0.activationState == .foregroundActive && $0 is UIWindowScene } as? UIWindowScene
-    }
-}
-extension UIWindow {
-    static var key: UIWindow? {
-        if #available(iOS 13, *) {
-            return UIApplication.shared.windows.first { $0.isKeyWindow }
-        } else {
-            return UIApplication.shared.keyWindow
-        }
-    }
-}
+//extension UIWindowScene {
+//    static var focused: UIWindowScene? {
+//        return UIApplication.shared.connectedScenes
+//            .first { $0.activationState == .foregroundActive && $0 is UIWindowScene } as? UIWindowScene
+//    }
+//}
+//extension UIWindow {
+//    static var key: UIWindow? {
+//        if #available(iOS 13, *) {
+//            return UIApplication.shared.windows.first { $0.isKeyWindow }
+//        } else {
+//            return UIApplication.shared.keyWindow
+//        }
+//    }
+//}
