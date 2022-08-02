@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6343693289929530013DB1A /* VMAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6343692289929530013DB1A /* VMAppTests.swift */; };
 		A6E9DD982893A804006E3F16 /* TblListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9DD962893A804006E3F16 /* TblListCell.swift */; };
 		A6E9DD992893A804006E3F16 /* TblListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E9DD972893A804006E3F16 /* TblListCell.xib */; };
 		A6E9DD9D2893C044006E3F16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9DD9C2893C044006E3F16 /* SceneDelegate.swift */; };
@@ -29,7 +30,19 @@
 		A6FEE4E52892AC1C00AC8783 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FEE4E42892AC1C00AC8783 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A6343694289929530013DB1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6FEE4AE2892496E00AC8783 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FEE4B52892496E00AC8783;
+			remoteInfo = VMApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A6343690289929530013DB1A /* VMAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6343692289929530013DB1A /* VMAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMAppTests.swift; sourceTree = "<group>"; };
 		A6E9DD962893A804006E3F16 /* TblListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TblListCell.swift; sourceTree = "<group>"; };
 		A6E9DD972893A804006E3F16 /* TblListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TblListCell.xib; sourceTree = "<group>"; };
 		A6E9DD9C2893C044006E3F16 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A634368D289929530013DB1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6FEE4B32892496E00AC8783 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6343691289929530013DB1A /* VMAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6343692289929530013DB1A /* VMAppTests.swift */,
+			);
+			path = VMAppTests;
+			sourceTree = "<group>";
+		};
 		A6E9DD952893A703006E3F16 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				A6FEE4B82892496E00AC8783 /* VMApp */,
+				A6343691289929530013DB1A /* VMAppTests */,
 				A6FEE4B72892496E00AC8783 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				A6FEE4B62892496E00AC8783 /* VMApp.app */,
+				A6343690289929530013DB1A /* VMAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +180,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A634368F289929530013DB1A /* VMAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6343696289929530013DB1A /* Build configuration list for PBXNativeTarget "VMAppTests" */;
+			buildPhases = (
+				A634368C289929530013DB1A /* Sources */,
+				A634368D289929530013DB1A /* Frameworks */,
+				A634368E289929530013DB1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6343695289929530013DB1A /* PBXTargetDependency */,
+			);
+			name = VMAppTests;
+			productName = VMAppTests;
+			productReference = A6343690289929530013DB1A /* VMAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A6FEE4B52892496E00AC8783 /* VMApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6FEE4CA2892497000AC8783 /* Build configuration list for PBXNativeTarget "VMApp" */;
@@ -181,6 +229,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					A634368F289929530013DB1A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A6FEE4B52892496E00AC8783;
+					};
 					A6FEE4B52892496E00AC8783 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -204,11 +256,19 @@
 			projectRoot = "";
 			targets = (
 				A6FEE4B52892496E00AC8783 /* VMApp */,
+				A634368F289929530013DB1A /* VMAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A634368E289929530013DB1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6FEE4B42892496E00AC8783 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,6 +284,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A634368C289929530013DB1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6343693289929530013DB1A /* VMAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6FEE4B22892496E00AC8783 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +314,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A6343695289929530013DB1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FEE4B52892496E00AC8783 /* VMApp */;
+			targetProxy = A6343694289929530013DB1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		A6FEE4BF2892496E00AC8783 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -266,6 +342,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A6343697289929530013DB1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SBPJDXG7CY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iroid.Test.VMAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMApp.app/VMApp";
+			};
+			name = Debug;
+		};
+		A6343698289929530013DB1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SBPJDXG7CY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iroid.Test.VMAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMApp.app/VMApp";
+			};
+			name = Release;
+		};
 		A6FEE4C82892497000AC8783 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -441,6 +553,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A6343696289929530013DB1A /* Build configuration list for PBXNativeTarget "VMAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6343697289929530013DB1A /* Debug */,
+				A6343698289929530013DB1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A6FEE4B12892496E00AC8783 /* Build configuration list for PBXProject "VMApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

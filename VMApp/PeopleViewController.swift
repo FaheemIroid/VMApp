@@ -17,18 +17,19 @@ class PeopleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        Helper.StatusBarColor(view: self.view)
         self.initialSetup()
+        
     }
     func initialSetup(){
-        Helper.StatusBarColor(view: self.view)
-
         self.tvList.register(UINib(nibName: "TblListCell", bundle: nil), forCellReuseIdentifier: "TblListCell")
         self.modelDataChangeSetup()
         self.peopleAPI()
        
     }
-    
-
 }
 extension PeopleViewController{
     //MARK: - People  API Calls

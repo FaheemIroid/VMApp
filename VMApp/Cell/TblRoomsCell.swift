@@ -33,10 +33,10 @@ class TblRoomsCell: UITableViewCell {
         self.lbOccupancy.text = "maxOccupancy : " + String(peopleData?.maxOccupancy ?? 0)
         if peopleData?.isOccupied == true{
             self.lbAvailability.text = "Not Available"
-            self.lbAvailability.textColor = .red
+            self.lbAvailability.textColor = Helper.colorFromHexString(hex: Helper.AppIndicatorColor)
         }else{
             self.lbAvailability.text = "Available"
-            self.lbAvailability.textColor = .green
+            self.lbAvailability.textColor = Helper.colorFromHexString(hex: Helper.AppGreenColor)
         }
     }
 }

@@ -19,6 +19,7 @@ class Helper {
     static var Api503Message : String =  "The server was unavailable!"
     static var ApiCommomErrorMessage : String =  "Somthing Went Wrong!"
     static var AppIndicatorColor : String = "#C40202"
+    static var AppGreenColor : String = "#006400"
     static var App_Base_Url : String =  "https://61e947967bc0550017bc61bf.mockapi.io/api/v1/"
     //MARK: - Colour code change From hex to string
     static func colorFromHexString (hex:String) -> UIColor {
@@ -57,8 +58,10 @@ class Helper {
                    statusbarView.centerXAnchor
                        .constraint(equalTo: view.centerXAnchor).isActive = true
                } else {
-                   let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
-                statusBar?.backgroundColor = self.colorFromHexString(hex: self.AppIndicatorColor)
+                   let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+                   let statusBar = UIView(frame: (window?.windowScene?.statusBarManager?.statusBarFrame)!)
+                   statusBar.backgroundColor = Helper.colorFromHexString(hex: Helper.AppIndicatorColor)
+                   window?.addSubview(statusBar)
             }
     }
     //MARK: - InterNet Checking
